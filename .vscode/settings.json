@@ -1,4 +1,7 @@
 {
   "editor.cursorStyle": "line",
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "workbench.tree.enableStickyScroll": false,
+  "editor.stickyScroll.scrollWithEditor": true,
+  "editor.stickyScroll.enabled": false
 }
