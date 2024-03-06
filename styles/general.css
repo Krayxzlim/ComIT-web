@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: poppins;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 3.3em;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+button{
+  color: #ffffff;
+  background-color: rgb(184, 142, 47);
+  padding: 10px 30px;
+  border: none;
+}
+
+button:hover{
+  background-color: rgba(184, 142, 47, 0.8);
+  transition-duration: 0.3s;
+}
+
+.container{
+  max-width: 1440px;
+  width:100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;;
+}
+
+
+
+
+
+
