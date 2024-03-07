@@ -27,6 +27,14 @@ a{
   color: black;
 }
 
+a:hover{
+  color: #5e5e5e;
+}
+
+a:active{
+  top: 1px;
+}
+
 button{
   color: #ffffff;
   background-color: rgb(184, 142, 47);

@@ -45,8 +45,16 @@
     font-size: 24px;
     font-weight: 600;
     color: #333333;
+    position: relative;
 }
 
+.link-carta:hover{
+    color: #5e5e5e;
+}
+
+.link-carta:active{
+    top: 1px;
+}
 
 @media(max-width: 767px){
     #navega-por-categorias .cartas{
