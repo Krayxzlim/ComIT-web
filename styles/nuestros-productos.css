@@ -20,10 +20,11 @@
 #nuestros-productos .cartas{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 1px;
     width: auto;
     margin-top: 40px;
-    margin-bottom: 10px;
-    justify-content: space-between; 
+    margin-bottom: 10px;     
 }
 
 #nuestros-productos .cartas .carta-producto{
@@ -36,8 +37,13 @@
 }
 
 #nuestros-productos .carta-imagenes{
-    padding: 20px;
+    padding: 10px;
     position: relative;    
+}
+
+#nuestros-productos .carta-imagenes img{
+    position: relative;
+    width: 100%;
 }
 
 #nuestros-productos .comprar{
@@ -49,7 +55,7 @@
 #nuestros-productos .descuento-new{
     position: absolute;
     top: 30px;
-    left: 210px;
+    left: 210px;    
 }
 
 #nuestros-productos .descuento{
@@ -59,6 +65,7 @@
     width: 50px;
     padding: 0;
     border-radius: 100%;
+    cursor: default;
 }
 
 #nuestros-productos .new{
@@ -68,6 +75,7 @@
     width: 50px;
     padding: 0;
     border-radius: 100%;
+    cursor: default;
 }
 
 #nuestros-productos .descuento:hover{
@@ -94,3 +102,107 @@
 #nuestros-productos .boton-compra:active{
     box-shadow: none;
 }
+
+#nuestros-productos .texto-guardar{
+    display: flex;
+    position: relative;
+    padding-bottom: 5px;  
+}
+
+#nuestros-productos .texto{
+    text-align: left;
+    padding-left: 8px;
+    width: 100%;
+}
+
+#nuestros-productos .texto p{
+    margin: 0;    
+}
+
+#nuestros-productos .producto-nombre{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: #3A3A3A;
+}
+
+#nuestros-productos .producto-descripcion{
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #898989;
+}
+
+#nuestros-productos .producto-precio{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #3A3A3A;
+}
+
+#nuestros-productos .producto-precio span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #B0B0B0;
+    text-decoration: line-through;
+}
+
+#nuestros-productos .guardar{
+    right: 8px;    
+    position: absolute;
+}
+
+#nuestros-productos .guardar button{
+    background: none;
+    padding: 0;    
+    border-radius: 100%;
+}
+
+#nuestros-productos .bot-button button{
+    background-color: white;
+    color: #B88E2F;
+    border-style: solid;
+    width: 280px;
+    border-width: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+#nuestros-productos .bot-button button:hover{
+    background-color: #B88E2F;
+    color: white;
+    border: none;
+}
+
+@media(max-width: 767px){
+    #nuestros-productos .cartas .carta-producto{
+        width: 200px;
+    }
+
+    #nuestros-productos .comprar{
+        position: absolute;
+        top: 180px;
+        left: 75px;
+    }
+    
+    #nuestros-productos .descuento-new{
+        position: absolute;
+        top: 20px;
+        left: 134px;    
+    }
+
+    #nuestros-productos .descuento{
+        height: 30px;
+        width: 30px;
+        font-size: 11px;
+    }
+    
+    #nuestros-productos .new{
+        height: 30px;
+        width: 30px;
+        font-size: 11px;
+    }
+}
+
