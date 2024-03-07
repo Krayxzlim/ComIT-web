@@ -204,5 +204,13 @@
         width: 30px;
         font-size: 11px;
     }
+
+    #nuestros-productos .section-title h2{
+        font-size: 30px;    
+    }
+    #nuestros-productos .section-title hr{
+        width: 90%;
+        margin: auto;        
+    }
 }
 
