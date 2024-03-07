@@ -46,6 +46,38 @@
     left: 132px;
 }
 
+#nuestros-productos .descuento-new{
+    position: absolute;
+    top: 30px;
+    left: 210px;
+}
+
+#nuestros-productos .descuento{
+    background-color: #CD554B;
+    color: white;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 100%;
+}
+
+#nuestros-productos .new{
+    background-color: #8FA174;
+    color: white;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 100%;
+}
+
+#nuestros-productos .descuento:hover{
+    box-shadow: none;
+}
+
+#nuestros-productos .new:hover{
+    box-shadow: none;
+}
+
 #nuestros-productos .boton-compra{
     background-color: rgba(255, 255, 255, 0.815);
     border-radius: 100%;
