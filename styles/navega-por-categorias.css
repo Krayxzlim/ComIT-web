@@ -1,0 +1,74 @@
+#navega-por-categorias .container{
+  height: auto;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-align: center;  
+}
+
+#navega-por-categorias .section-title h2{
+    color: #333333;
+    margin: 0;    
+}
+
+#navega-por-categorias .section-title hr{
+    width: 36%;
+    margin: auto;
+    border-width: 2px;       color: rgb(144, 144, 144);
+}
+
+#navega-por-categorias .cartas{
+    display: flex;
+    justify-content: center;    
+    margin-top: 70px;
+}
+
+#navega-por-categorias .cartas .carta-categoria{
+    margin: 10px;    
+}
+
+#navega-por-categorias .cartas .carta-categoria .imagen{
+    height: auto;
+    width: auto;    
+}
+
+
+#navega-por-categorias img{
+    border-radius: 2%;
+} 
+
+.categoria{
+    margin-top: 30px;
+}
+
+.link-carta{
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+}
+
+
+@media(max-width: 767px){
+    #navega-por-categorias .cartas{
+        display: flex;
+        flex-wrap: wrap;        
+    }
+    #navega-por-categorias .section-title h2{
+        font-size: 30px;    
+    }
+    .link-carta{
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+    }
+    .categoria{
+        margin-top: 0px;
+    }
+    #navega-por-categorias .section-title hr{
+        width: 90%;
+        margin: auto;        
+    }
+    #navega-por-categorias .cartas{
+        margin-top: 20px;
+    }
+}

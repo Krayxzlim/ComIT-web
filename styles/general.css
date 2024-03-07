@@ -37,6 +37,11 @@ button{
 button:hover{
   background-color: rgba(184, 142, 47, 0.8);
   transition-duration: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 4px 8px;
+}
+
+button:active{
+  box-shadow: none;
 }
 
 .container{
