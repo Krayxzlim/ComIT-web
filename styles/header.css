@@ -14,7 +14,6 @@
   display: flex;
   flex: 1;
   margin-left: 35px;
-  padding-top: 15px;
   font-size: 30px;
   font-weight: bold;
   color: black;
@@ -47,16 +46,52 @@
 
 #head .head-icon{
   display: flex;
-  justify-content: end;
-  flex: 2;  
-  margin-right: 20px;
+  justify-content: flex-end;
+  flex: 2.4;  
+  margin-right: 40px;
 }
 
-#head .head-icon img{
-  height: 25px;
-  padding-right: 20px;
+#head .head-icon a{
+  margin: 10px;
 }
 
+#head .head-icon button{
+  background: none;
+  padding: 5px;
+  color: black;
+} 
+
+#head .head-icon button:hover, #head .head-icon button:active{
+  background: none;
+  box-shadow: none;
+  color: #5e5e5e;
+}
+
+#head input{
+  display: none;
+  border: none;
+  width: 250px;
+  height: 38px;
+  border-radius: 0;
+  outline: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: 
+  linear-gradient(90deg, #222,#222) center bottom/0 2px no-repeat,
+  linear-gradient(90deg, #a0a0a0,#a0a0a0) left bottom/100% 2px no-repeat;
+  transition: background-size 0.3s ease;      
+}
+
+#head .active{
+  display: block;
+}
+
+#head input:valid{
+  background-size: 100% 2px, 100% 2px;
+} 
+#head input:focus{
+  background-size: 100% 2px, 100% 2px;
+}
 
 .scroll-down header{
   transform: translate3d(0, -100%,0);

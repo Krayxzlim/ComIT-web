@@ -1,0 +1,25 @@
+#ideas .container{
+    height: auto;
+    width: auto;
+    margin-bottom: 80px;
+    text-align: center; 
+}
+
+#ideas .section-title p{
+    color: #616161;
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 20px;
+}
+
+#ideas .section-title h2{
+    color: #333333;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 120%;
+    margin: 0;    
+}
+
+#ideas p{
+    margin: 0;
+}

@@ -6,6 +6,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,6 +18,9 @@
     <link rel="stylesheet" href="styles/navega-por-categorias.css">
     <link rel="stylesheet" href="styles/nuestros-productos.css">
     <link rel="stylesheet" href="styles/inspo.css">
+    <link rel="stylesheet" href="styles/ideas.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
     <title>Logo.</title>
     <link rel="icon" href="iconos/favicon.ico" type="image/x-icon">   
   </head>
@@ -31,19 +36,20 @@
         </div>
         <nav>
           <a href="#" class="nav-link">Inicio</a>
-              <a href="#" class="nav-link">Productos</a>
-              <a href="#" class="nav-link">Quiénes Somos</a>
-              <a href="#" class="nav-link">Contactanos</a>
+          <a href="#" class="nav-link">Productos</a>
+          <a href="#" class="nav-link">Quiénes Somos</a>
+          <a href="#" class="nav-link">Contactanos</a>
         </nav>
         <div class="head-icon">
-          <a class="search-icon-button">
-            <img class="iconos-header" src="iconos/Search_alt@3x.png" alt="">
+          <input type="search" required name="" id="search-input" placeholder="Buscar">
+          <button id="search-btn">
+            <span class="fa-solid fa-magnifying-glass fa-xl"></span>
+          </button>
+          <a href="#" class="nav-icon">
+            <span class="fa-regular fa-user fa-xl"></span>
           </a>
-          <a href="#" class="user-icon-button">
-            <img class="iconos-header" src="iconos/User_alt@3x.png" alt="">
-          </a>
-          <a href="#" class="bag-icon-button">
-            <img class="iconos-header" src="iconos/Bag@3x.png" alt="">
+          <a href="#" class="nav-icon">
+            <span class="fa-solid fa-bag-shopping fa-xl"></span>
           </a>
         </div>
       </div>
@@ -93,17 +99,17 @@
           <hr>
         </div>
         <div class="cartas">
-          <div class="carta-categoria">
+          <div class="carta-categoria"><a href="#" class="link-carta" >
             <div class="imagen"><img src="images/image 106.png" alt=""></div>
-            <div class="categoria"><a href="#" class="link-carta" >Comedor</a></div>            
+            <div class="categoria"><p class="texto-carta">Comedor</p></div></a>                      
           </div>
-          <div class="carta-categoria">
+          <div class="carta-categoria"><a href="#" class="link-carta" >
             <div class="imagen"><img src="images/image 100.png" alt=""></div>
-            <div class="categoria"><a href="#" class="link-carta" >Living</a></div>            
+            <div class="categoria"><p class="texto-carta">Living</p></div></a>            
           </div>
-          <div class="carta-categoria">
+          <div class="carta-categoria"><a href="#" class="link-carta" >
             <div class="imagen"><img src="images/image 101.png" alt=""></div>
-            <div class="categoria"><a href="#" class="link-carta" >Dormitorio</a></div>            
+            <div class="categoria"><p class="texto-carta">Dormitorio</p></div></a>            
           </div>
         </div>        
       </div>      
@@ -304,7 +310,7 @@
     <section id="inspo">
       <div class="container">
         <div class="texto-inspo">
-          <h2 class="inspo">50+ Ideas para <br>
+          <h2 class="inspo">Ideas para <br>
             Inspirarte</h2>
           <p>At consectetur lorem donec massa sapien <br> faucibus et molestie ac</p>
           <button>Explorar Mas</button>
@@ -362,24 +368,36 @@
 
     <section id="ideas">
       <div class="container">
-        <p>Comparti tus Ideas</p>
-        <h2>#LogoDecoracion</h2>
+        <div class="section-title">
+          <p>Comparti tus Ideas</p>
+          <h2>#LogoDecoracion</h2>
+        </div>        
         <div class="carrousel-automatico-ideas"></div>
       </div>
     </section>
 
-    <footer>
+    <footer id="foot">
       <div class="container">
-        <div class="lineas">
-          <div class="bloques">
-            <p>Logo.</p>
+        <div class="separador1">
+          <hr>
+        </div>  
+        <div class="linea1">       
+          <div class="bloque1">
+            <p class="logo">Logo.</p>
             <div class="dire">
-              <img src="iconos/Pin_alt_fill.png" alt="">
-              <p>400 Scelerisque Eleifend 200 Sapien Nec,
-              ZT 65668 SIT</p>
+              <a href="" class="dire">
+                <div class="org">
+                  <i class="fa-solid fa-location-dot fa-lg"></i>
+                </div>
+                <div class="org">
+                  <span class="texto"> 400 Scelerisque Eleifend 200 <br>Sapien Nec,<br>
+                    ZT 65668 SIT</span>
+                </div>                
+              </a>             
             </div>            
           </div>
-          <div class="bloques">
+          <div class="bloque2">
+            <div class="titulo"></div>
             <h2>Navegacion</h2>
             <div class="links">
               <ul>
@@ -390,36 +408,66 @@
               </ul>
             </div>
           </div>
-          <div class="bloques">
-            <h2>Contacto</h2>
-            <div class="tel">
-              <img src="iconos/Phone_fill.png" alt="">
-              <p>11-64!2-4B2A</p>
+          <div class="bloque3">
+            <div class="titulo">
+              <h2>Contacto</h2>
             </div>
-            <div class="mail">
-              <img src="iconos/Message_fill.png" alt="">
-              <p>Logo@logo.com</p>
-            </div>
+            <div class="telmail">
+              <div class="tel">
+                <a href="">
+                  <i class="fa-brands fa-whatsapp fa-xl"></i>
+                  <span>&ensp;11-64!2-4B2A</span>
+                </a>
+              </div>
+              <div class="mail">
+                <a href="">
+                  <i class="fa-solid fa-envelope fa-xl"></i>
+                  <span>&ensp;Logo@logo.com</span>
+                </a>            
+              </div>
+            </div>            
           </div>
-          <div class="bloques">
+          <div class="bloque4">
             <div class="redes">
-              <h2>Redes Sociales</h2>
-              <a href="#"><img src="iconos/insta.png" alt=""></a>
+              <div class="titulo">
+                <h2>Redes Sociales</h2>
+              </div>
+              <div class="link-redes">
+                <a href="">
+                  <i class="fa-brands fa-instagram fa-xl"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-facebook fa-xl"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-x-twitter fa-xl"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-pinterest-p fa-xl"></i>
+                </a>
+              </div>               
             </div>
             <div class="newsletter">
-              <h2>Newsletter</h2>
-              <div class="sendemail">
-                <input type="email" name="" id="">
-                <a href="#"><img src="iconos/Send_fill.png" alt=""></a>
+              <div class="titulo">
+                <h2>Newsletter</h2>
               </div>
-              
+              <div class="icono">
+                <input type="email" required name="" id="" placeholder="Email">
+                <a href="#"class="sendemail">
+                  <i class="fa-solid fa-paper-plane fa-xl"></i>
+                </a>                
+              </div>
             </div>
           </div>
         </div>
-        <div class="lineas">
-          <p>2024 Logo. All rights reverved</p>
-        </div>
-        
+        <div class="separador2">
+          <hr>
+        </div> 
+        <div class="linea2">
+          <div class="derechos">
+            <p>2024 Logo. All rights reverved</p>
+          </div>          
+        </div>        
       </div>
     </footer>   
     
@@ -449,5 +497,14 @@
         lastScroll = currentScroll;
       })
     </script>    
+
+    <script>
+      const btn = document.querySelector("#search-btn")
+      const input = document.querySelector("#search-input")
+
+      btn.addEventListener('click', () => {
+        input.classList.toggle('active')
+      })
+    </script>
   </body>
 </html>
