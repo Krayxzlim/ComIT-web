@@ -1,0 +1,136 @@
+#inspo .container{
+    width: auto;
+    display: flex;
+    height: 670px;
+    margin-bottom: 80px;
+    background-color: #FCF8F3;
+}
+
+#inspo .texto-inspo{
+    text-align: left;
+    align-self: center;
+    margin: 0;
+    padding: 80px;
+    padding-bottom: 200px;
+}
+
+#inspo .texto-inspo h2{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+    color: #3A3A3A;
+    margin: 0;
+}
+
+#inspo .texto-inspo p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #616161;
+    margin-bottom: 25px;
+}
+
+#inspo .texto-inspo button{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: #ffffff;
+}
+#inspo .card{
+    height: 630px;
+    width: 400px;
+    margin-top: 20px;
+    bottom: 20px;
+    position: relative;
+}
+
+#inspo .image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#inspo .image-wrapper img{
+    height: 630px;
+}
+
+#inspo .card-body{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 60%) ;
+    padding-left: 30px;
+    bottom: 25px;
+    left: 25px;
+    backdrop-filter: blur(1.5px);
+}
+
+#inspo .card-body hr{
+    display: inline-block;
+    position: relative;
+    top: 12px;
+    width: 30px;
+    border-width: 1px;
+    border-style: solid;   
+}
+
+#inspo .card-body h5{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #616161;
+}
+
+#inspo .card-body p{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #3A3A3A;
+}
+
+#inspo .card-body .btn{
+    position: absolute;
+    bottom: 0px;
+    right: -48px;
+    background-color: #B88E2F;
+    border: none;
+    border-radius: 0;
+}
+
+#inspo .carousel-controls{
+    position: absolute;   
+    }
+    
+#inspo .carousel-indicators{
+    position: relative;
+    top: 596px;
+    left: 280px;
+    margin: 0;
+    }
+    
+#inspo .carousel-indicators button{
+    height: 10px;
+    background-color: #b3b3b3;
+    width: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s linear;
+}
+    
+#inspo .carousel-indicators button.active{
+    background-color: rgb(184, 142, 47, 1);
+    box-shadow: 0 0 0 0.5px rgba(184, 142, 47, 1);  
+}
+
+#inspo .carousel-control-next{
+    background-color: #B88E2F;
+    padding: 0;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    top: 300px;
+    opacity: 1;
+    filter: drop-shadow(0 0 0.75rem rgb(97, 97, 97));;
+
+}

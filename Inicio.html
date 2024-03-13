@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/navega-por-categorias.css">
     <link rel="stylesheet" href="styles/nuestros-productos.css">
+    <link rel="stylesheet" href="styles/inspo.css">
     <title>Web L.A.</title>   
   </head>
   <body>
@@ -302,12 +303,59 @@
     <section id="inspo">
       <div class="container">
         <div class="texto-inspo">
-          <h2 class="inspo">50+ Ideas para
+          <h2 class="inspo">50+ Ideas para <br>
             Inspirarte</h2>
-          <p>At consectetur lorem donec massa sapien faucibus et molestie ac</p>
+          <p>At consectetur lorem donec massa sapien <br> faucibus et molestie ac</p>
           <button>Explorar Mas</button>
         </div>
-        <div class="carrousel-inspo"></div>        
+        <div id="slider" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="images/david-lucido-1.webp" alt="">
+                </div>                
+                <div class="card-body">
+                  <h5 class="card-title">01 <hr> Estudio </h5>
+                  <p class="card-text">Minimalista</p>
+                  <button class="btn btn-primary"><img src="iconos/Right 16px.png" alt=""></button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="images/AD1122_KITCHENS_AND_BATHS_53 copy.webp" alt="">
+                </div>                
+                <div class="card-body">
+                  <h5 class="card-title">02 <hr> Dolor </h5>
+                  <p class="card-text">Adipiscing</p>
+                  <button class="btn btn-primary"><img src="iconos/Right 16px.png" alt=""></button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="images/Pinchin_sm_bathimage2.webp" alt="">
+                </div>                
+                <div class="card-body">
+                  <h5 class="card-title">03 <hr> Ac </h5>
+                  <p class="card-text">Dictum</p>
+                  <button class="btn btn-primary"><img src="iconos/Right 16px.png" alt=""></button>
+                </div>
+            </div>
+          </div>          
+          <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>             
       </div>
     </section>
 
