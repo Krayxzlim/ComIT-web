@@ -53,6 +53,10 @@
     color: #5e5e5e;
 }
 
+#navega-por-categorias img:hover{
+    filter: brightness(.5);
+}
+
 .link-carta:active{
     top: 1px;
 }
