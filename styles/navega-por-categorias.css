@@ -55,6 +55,7 @@
 
 #navega-por-categorias img:hover{
     filter: brightness(.5);
+    transition: 0.3s;
 }
 
 .link-carta:active{
