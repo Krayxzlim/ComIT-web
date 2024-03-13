@@ -122,6 +122,12 @@
     box-shadow: 0 0 0 0.5px rgba(184, 142, 47, 1);  
 }
 
+#inspo .carousel-indicators button:hover{
+    background-color: #EDE5DB;
+    transition-duration: 0.3s;
+    box-shadow: 0 0 0 0.5px #EDE5DB;
+  }
+
 #inspo .carousel-control-next{
     background-color: #B88E2F;
     padding: 0;
