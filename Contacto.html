@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/general.css"> 
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/contacto.css">
   
   <title>Contactanos</title>
 
@@ -24,7 +25,7 @@
   <header id="head">
     <div class="container">
       <div class="head-logo">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <p class="logo-nombre">
             Logo.
           </p>
@@ -51,15 +52,51 @@
     </div>
   </header>
 
-  <div class="hero">
-    <div class="img"></div>
-    <div class="text"></div>
-  </div>
+  <section id="hero">
+    <div class="container">
+      <div class="img">
+        <div class="image-wrapper">
+          <img src="images/Workstead_39_Jefferys_Lane_0018.webp" alt="">
+        </div> 
+      </div>
+      <div class="text">
+        <h2>Contactanos</h2>
+        <a href="index.html"><span>Inicio</span>&emsp;</a><i class="fa-solid fa-angle-right fa-lg"></i>&emsp;<span class="light">Contactanos</span>
+      </div>
+    </div>    
+  </section>
 
-  <div class="form">
-    <div class="contacto"></div>
-    <div class="cuerpo"></div>
-  </div>
+  <section id="principal">
+    <div class="container">
+      <div class="contacto">
+        <h2>Ponete en Contacto con Nosotros</h2>
+        <p>Para obtener más información sobre nuestros productos y servicios. No dude en enviarnos un <br> correo electrónico. Nuestro personal siempre estará ahí para ayudarle. ¡No lo dudes!</p>
+      </div>
+      <div class="cuerpo">
+        <div class="info"></div>
+        <div class="form">
+          <form>
+            <div class="form-group">
+              <label for="form-nombre">Nombre</label>
+              <input type="text" class="form-control" id="form-nombre" placeholder="Juan Perez">
+            </div>
+            <div class="form-group">
+              <label for="form-mail">Email</label>
+              <input type="email" class="form-control" id="form-mail" placeholder="JuanPerez@email.com">          
+            </div>
+            <div class="form-group">
+              <label for="form-telefono">Telefono</label>
+              <input type="tel" class="form-control" id="form-telefono" placeholder="011-1234-1234"pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">          
+            </div>
+            <div class="form-group">
+              <label for="form-mensaje">Mensaje</label>
+              <textarea class="form-control" id="form-mensaje" rows="3" placeholder="Queria consultar por..."></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>   
+  </section>
 
   <footer id="foot">
     <div class="container">
@@ -155,5 +192,40 @@
       </div>        
     </div>
   </footer>   
+
+  <script>
+    const body = document.body;
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset
+
+      if (currentScroll <= 0) {
+        body.classList.remove("scroll-up")
+      }
+
+      if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+        body.classList.remove("scroll-up")
+        body.classList.add("scroll-down")
+      }
+
+      if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+        body.classList.remove("scroll-down")
+        body.classList.add("scroll-up")
+      }
+
+      lastScroll = currentScroll;
+    })
+  </script>
+
+  <script>
+    const btn = document.querySelector("#search-btn")
+    const input = document.querySelector("#search-input")
+
+    btn.addEventListener('click', () => {
+      input.classList.toggle('active')
+    })
+  </script>
+
 </body>
 </html>

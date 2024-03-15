@@ -1,0 +1,59 @@
+/* hero section*/
+#hero .image-wrapper{
+    height: 416px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero img{
+    position: absolute;
+    top: -120%;
+    filter: blur(4px);
+    opacity: 80%;
+}
+
+#hero .text{
+    position: relative;
+    text-align: center;
+    transform: translate(0,-180px);
+    color: black;
+}
+
+
+#hero .text h2{
+    font-size: 48px;
+    font-weight: 500;
+    
+}
+
+#hero .text a{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#hero .text .light{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*principal section*/
+#principal .contacto{
+    text-align: center;
+    color: black;
+    margin-bottom: 150px;
+}
+
+#principal .contacto h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#principal .contacto p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9f9f9f;
+}
